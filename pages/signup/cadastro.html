@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <main>
+        <section>
+            <div class="form-container">
+                <h1>Get Started Now</h1>
+                <form action="" method="post">
+                    <fieldset>
+                        <label for="">Name</label>
+                        <input placeholder="Enter your name" type="text" name="name" id="name">
+                    </fieldset>
+                    <fieldset>
+                        <label for="">Email address</label>
+                        <input placeholder="Enter your name" type="email" name="email" id="email">
+                    </fieldset>
+                    <fieldset>
+                        <div class="title-wrapper">
+                            <label for="">Password</label>
+                        </div>
+                        <input placeholder="Name" type="password" name="password" id="password">
+                    </fieldset>
+                    <fieldset class="checkbox">
+                        <input type="checkbox" name="" id="remember">
+                        <label for="">I agree to the <a href="#" class="custom-link">terms & policy</a></label>
+                    </fieldset>
+                    <button type="button" onclick="fazerCadastro()">Signup</button>
+                </form>
+                <div class="divider">
+                    <div class="line"></div>
+                    <p>Or</p>
+                    <p class="line"></p>
+                </div>
+                <div class="sso-container">
+                    <button>
+                        <img src="../assets/icons/google-logo.svg" alt="logo google">
+                        <p>Sign in with Google</p>
+                    </button>
+                    <button>
+                        <img src="../assets/icons/apple-logo.svg" alt="logo apple">
+                        <p>Sign in with Apple</p>
+                    </button>
+                </div>
+                <p class="redirect-sign-up">Have an account? <a href="../signin/login.html">Sign In</a></p>
+            </div>
+        </section>
+        <img src="../assets/images/costela-de-adao.png" alt="foto de uma planta de costela-de-adao">
+    </main>
+
+    <script>
+    function fazerCadastro() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      if (name && email && password) {
+        alert("Cadastro realizado com sucesso!");
+      } else {
+        alert("Preencha todos os campos antes de continuar.");
+      }
+    }
+    </script>
+</body>
+</html>
